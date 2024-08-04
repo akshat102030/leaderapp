@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Leaderboard</h1>
+    <form id="leaderboard-form">
+        <input type="number" id="teamNumber" placeholder="Team Number" required>
+        <input type="number" id="score1" placeholder="Score 1" required>
+        
+        <select id="score2" required>
+            <option value="" disabled selected>Select Score 2</option>
+            <option value="50">50</option>
+            <option value="0">0</option>
+        </select>
+
+        <select id="score3" required>
+            <option value="" disabled selected>Select Score 3</option>
+            <option value="50">50</option>
+            <option value="0">0</option>
+        </select>
+
+        <input type="text" id="time1" placeholder="Time 1 (MM:SS)" required>
+        <input type="text" id="time2" placeholder="Time 2 (MM:SS)" required>
+        <button type="submit" style="border-radius: 15px;background-color: black;color: white;;">Add to Leaderboard</button>
+    </form>
+
+    <table id="leaderboard-table">
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th>Score 1</th>
+                <th>Score 2</th>
+                <th>Score 3</th>
+                <th>Time 1 (Seconds)</th>
+                <th>Time 2 (Seconds)</th>
+                <th>Total Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Leaderboard entries will be inserted here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
